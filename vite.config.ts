@@ -3,6 +3,6 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],
-	base: "/Portfolio.github.io/",
+	base: "/coolCoder54323.github.io/",
 
 });
