@@ -4,8 +4,11 @@
     
 </script>
 
-<div class="ml-auto mr-auto shadow-whiteG rounded-md border-4 bg-black/60 transition-all hover:scale-105
+<div class="ml-auto mr-auto shadow-whiteG rounded-md border-4 flick bg-black/60 transition-all hover:scale-105
             md:w-[20rem]">
+        <div>
+
+        </div>
         <a href={link}>
             <img class="ml-auto mr-auto" alt="Project preview" src="{imageSrc}">
         </a>
@@ -18,3 +21,17 @@
     </div>
 
 </div>
+
+<style>
+    @keyframes move {
+        0% {transform: rotate3d(0);}
+        25% {transform: rotate3d(0, 0, 1, 0.7deg);}
+        50% {transform: rotate3d(0, 0, 0, 0);}
+        75% {transform: rotate3d(0, 0, 1, -0.7deg);}
+        100% {transform: rotate3d(0);}
+    }
+
+    .flick:hover {
+        animation: move linear 0.45s 1;
+    }
+</style>
