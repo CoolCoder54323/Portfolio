@@ -4,7 +4,7 @@
     
 </script>
 
-<div class="ml-auto mr-auto shadow-whiteG rounded-md border-4 flick bg-black/60 transition-all hover:scale-105
+<div class="ml-auto mr-auto shadow-whiteG rounded-md border-4 flick bg-black/60 transition-all
             md:w-[20rem]">
         <div>
 
@@ -28,10 +28,10 @@
         25% {transform: rotate3d(0, 0, 1, 0.7deg);}
         50% {transform: rotate3d(0, 0, 0, 0);}
         75% {transform: rotate3d(0, 0, 1, -0.7deg);}
-        100% {transform: rotate3d(0);}
+        100% {transform: rotate3d(0) ; transform: scale(110%);}
     }
 
     .flick:hover {
-        animation: move linear 0.45s 1;
+        animation: move linear 0.45s 1 forwards;
     }
 </style>
