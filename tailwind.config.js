@@ -9,6 +9,8 @@ module.exports = {
         'greenG': '0px 0px 16px 3px rgba(46,255,157,0.2)',
         'blackG': '0px 0px 5px 1px rgba(0,0,0,1)',
         'whiteG': '0px 0px 5px 1px rgba(255,255,255,1)',
+        'whiteGl': '0px 0px 10px 1px rgba(255,255,255,1)',
+
 
       }
     },

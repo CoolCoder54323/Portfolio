@@ -1,26 +1,48 @@
 <script>
     // Using $props to access the incoming props
-    let { imageSrc, description, title, link } = $props();
+    let { imageSrc, description, title, link, skills = null} = $props();
+
+    import Skill from "./skill.svelte";
+
+    
+     console.log(skills)
+
+    
     
 </script>
 
-<div class="ml-auto mr-auto shadow-whiteG rounded-md border-4 flick bg-black/60 transition-all
-            md:w-[20rem]">
-        <div>
-
-        </div>
+<div class="group grid transition-all gap-x-0
+            xl:grid-cols-[34rem_0rem] xl:hover:grid-cols-[26rem_8rem] xl:gap-y-4
+            lg:grid-cols-[28rem_0rem] lg:hover:grid-cols-[22rem_6rem] lg:gap-y-3
+            md:grid-cols-[20rem_0rem] md:hover:grid-cols-[14rem_6rem] md:gap-y-0">
+    <div class="ml-auto mr-auto border-0 border-white shadow-whiteGl group-hover:shadow-whiteG group-hover:border-4 rounded-md  flick bg-black/60 transition-all row-span-8 col-span-1 
+            lg:h-[25rem] 
+            xl:h-[30rem]
+            md:h-[20rem]">
         <a href={link}>
-            <img class="ml-auto mr-auto" alt="Project preview" src="{imageSrc}">
+            <img class=" z-0 rounded-lg" alt="Project preview" src="{imageSrc}">
         </a>
-        <div class="p-4 text-center">
+        <div class="p-4 text-center w-full ">
             <h2 class="text-xl font-bold text-white mb-2">{title}</h2>
             <p class="text-gray-200 text-sm">
                 {description}
             </p>  
 
+        </div>
+
     </div>
+    <!-- <div></div> -->
+    {#if skills !== null}
+        {#each skills as skill, i}
+            <div class="skill border-b-2 ml-4  w-full border-x-cyan-100 col-span-1 bg-blue-400/0 flex justify-center items-center h-full {"grow" + (i+1)} scale-0 overflow-hidden transition-all
+                         text-xl font-bold">
+                {skill.title}
+            </div>
+        {/each}
+    {/if}
 
 </div>
+
 
 <style>
     @keyframes move {
@@ -28,10 +50,43 @@
         25% {transform: rotate3d(0, 0, 1, 0.7deg);}
         50% {transform: rotate3d(0, 0, 0, 0);}
         75% {transform: rotate3d(0, 0, 1, -0.7deg);}
-        100% {transform: rotate3d(0) ; transform: scale(110%);}
+        100% {transform: rotate3d(0);}
+    }
+    /* @keyframes grow {
+        0% {transform: scale(0);}
+        100% {transform: scale(100%);}
+    } */
+    @keyframes grow {
+        0% {transform: scaleX(0) translateX(-10rem);}
+        100% {transform: scaleX(100%) translateX(0rem);}
     }
 
-    .flick:hover {
+    .group:hover .flick {
         animation: move linear 0.45s 1 forwards;
+    }
+
+    .group:hover .grow1 {
+        animation: grow 0.25s 0s 1 forwards;
+    }
+    .group:hover .grow2 {
+        animation: grow 0.25s 0.15s 1 forwards;
+    }
+    .group:hover .grow3 {
+        animation: grow 0.25s 0.3s 1 forwards;
+    }
+    .group:hover .grow4 {
+        animation: grow 0.25s 0.45s 1 forwards;
+    }
+    .group:hover .grow5 {
+        animation: grow 0.25s 0.6 1 forwards;
+    }
+    .group:hover .grow6 {
+        animation: grow 0.45s 0.75s 1 forwards;
+    }
+    .group:hover .grow7 {
+        animation: grow 0.45s 2.70s 1 forwards;
+    }
+    .group:hover .grow8 {
+        animation: grow 0.45s 3.15s 1 forwards;
     }
 </style>

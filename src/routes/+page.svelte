@@ -33,12 +33,11 @@
         i = Math.trunc((scroll + 6)/pageHeight);
         console.log(i)
 
-        if(i < pages - 1){
+        if(i < pages - 1)
             i++;
-        }
-        else{
-            i = 0
-        }
+        else
+            i = 0;
+        
         return i;
     }
 
@@ -69,6 +68,7 @@
 <About>
 </About>
 <Projects>
+    
 </Projects>
 <div class="left-1/2 -translate-x-1/2 text-white transform fixed bottom-6 " >
     <button on:click={scrollDown} class="h-12 w-16 transition-all hover:scale-105 {bounce && "bounceIt"}" on:mouseenter={()=> bounce = false}>
@@ -88,7 +88,7 @@
     }
 
     .bounceIt {
-        animation: bounce 1s 2s 5;
+        animation: bounce 1s 1s 5;
     }
 
     .bounceIt:hover {

@@ -21,7 +21,7 @@
             </a>
             
         </div>
-        <button class="bounceIt text-lg sm:text-xl shadow-greenG m-4 bg-green-500 hover:bg-green-600 px-4 py-2 rounded transition-all scale-105 hover:scale-110">
+        <button class=" motion-scale-x-in-0 motion-preset-fade-lg text-lg sm:text-xl shadow-greenG m-4 bg-green-500 hover:bg-green-600 px-4 py-2 rounded transition-all scale-105 hover:scale-110">
         Contact me!
         </button>
 
