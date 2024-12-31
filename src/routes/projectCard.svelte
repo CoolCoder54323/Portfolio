@@ -4,8 +4,6 @@
 
     import Skill from "./skill.svelte";
 
-    
-     console.log(skills)
 
     
     
