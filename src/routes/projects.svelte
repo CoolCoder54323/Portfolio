@@ -55,7 +55,7 @@
                      title={"Bash Music"} link = "https://github.com/CoolCoder54323/homebrew-bashMusic" skills={bash_skills}/>
 
         <ProjectCard imageSrc="portfolioPreview.png" description={ps_description} 
-                     title={"Portfolio site"} link = "https://github.com/CoolCoder54323/PropStopOdds_Beta2" skills={portfolio_skills}/>
+                     title={"Portfolio site"} link = "https://coolcoder54323.github.io/Portfolio/" skills={portfolio_skills}/>
     </div>
 
 
