@@ -9,7 +9,7 @@
     let ps_description = "This portfolio!"
 
     let prop_skills = [
-        { title: "Fullstack devolopementw"},
+        { title: "Fullstack Development"},
         { title: "☕ Javascript", description: "" },
         { title: "SQLite", description: "" },
         { title: "📄 HTML", description: "" },
