@@ -8,32 +8,13 @@
 </div>
 
 <style>
-        @keyframes grow {
-        0% {transform: scale(0);}
-        100% {transform: scale(100%);}
+    @keyframes move {
+        0% {transform: rotate3d(0);}
+        25% {transform: rotate3d(0, 0, 1, 0.7deg);}
+        50% {transform: rotate3d(0, 0, 0, 0);}
+        75% {transform: rotate3d(0, 0, 1, -0.7deg);}
+        100% {transform: rotate3d(0);}
     }
-    .group:hover .grow1 {
-        animation: grow 0.45s 1 forwards;
-    }
-    .group:hover .grow2 {
-        animation: grow 0.15s 0.15s 1 forwards;
-    }
-    .group:hover .grow3 {
-        animation: grow 0.15s 0.3s 1 forwards;
-    }
-    .group:hover .grow4 {
-        animation: grow 0.15s 0.45s 1 forwards;
-    }
-    .group:hover .grow5 {
-        animation: grow 0.15s 0.6 1 forwards;
-    }
-    .group:hover .grow6 {
-        animation: grow 0.15s 0.75s 1 forwards;
-    }
-    .group:hover .grow7 {
-        animation: grow 0.15s 1s 1 forwards;
-    }
-    .group:hover .grow8 {
-        animation: grow 0.15s 1.25s 1 forwards;
-    }
+
+    
 </style>
