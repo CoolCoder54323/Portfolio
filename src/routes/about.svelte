@@ -4,7 +4,7 @@
         <p class=" text-xl text-slate-400"> 
             My name is <span class="text-yellow-400">Nicholas Dixon</span>, I am a Sophomore at the New Jersey Institute of Technology with a passion for Software Development 💻. <br><br>
             With experience in building <span class="text-yellow-400">full-stack </span> web apps and in <span class="text-yellow-400">machine learning</span> 🤖, I thrive on tackling challenges and learning new things! 🚀
-            <br><br>When im not coding I apreciate a good game of ping pong 🏓 to unwind, sharpen my reflexes, and enjoy some friendly competition
+            <br><br>When im not coding I enjoy a good game of ping pong 🏓 to unwind, sharpen my reflexes, and enjoy some friendly competition
         </p>
     </div>
 </div>

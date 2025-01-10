@@ -10,6 +10,7 @@
 
     let prop_skills = [
         { title: "Fullstack Development"},
+        { title: "📊 Data Visualization"},
         { title: "☕ Javascript", description: "" },
         { title: "SQLite", description: "" },
         { title: "📄 HTML", description: "" },
@@ -35,7 +36,6 @@
 
     let portfolio_skills = [ { title: "🎨 UI/UX Design"},
                             { title: "⚡ Responsive Design" },
-                            { title: "📊 Data Visualization"},
                             { title: "🌟 Animations" },]
 
 

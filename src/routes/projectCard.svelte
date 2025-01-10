@@ -17,15 +17,10 @@
             lg:h-[25rem] 
             xl:h-[30rem]
             md:h-[20rem]">
-        <div class="a">
-
-        </div>
         <div class="a relative">
             <img class=" z-0 rounded-lg transition-all" alt="Project preview" src="{imageSrc}">
-            <div 
-            class="absolute flex justify-center items-center
-                    text-white text-xl font-bold opacity-0 tex hover:opacity-100 transition-all underline text-cyan-200"
-        >
+            <div class="absolute flex justify-center items-center
+                    text-white text-xl font-bold opacity-0 tex hover:opacity-100 transition-all underline text-cyan-200"> 
             <a href={link}> 
                 Link to project
             </a>
@@ -42,13 +37,13 @@
     </div>
     <!-- <div></div> -->
     {#if skills !== null}
-    <div class="skill border-b-2 ml-4  w-full text-yellow-400 border-y-yellow-400 col-span-1 bg-blue-400/0 flex justify-center items-center h-full {"grow1"} scale-0 overflow-hidden transition-all
+    <div class="skill drop-shadow-[0px_0px_5px_rgba(255,187,0,0.9)] border-b-2 ml-4  w-full text-yellow-400 border-y-yellow-400 col-span-1 bg-blue-400/0 flex justify-center items-center h-full {"grow1"} scale-0 overflow-hidden transition-all
     text-3xl font-bold">
     Skills:
     </div>
         {#each skills as skill, i}
-            <div class="skill border-b-2 ml-4 w-full border-y-white col-span-1 bg-blue-400/0 flex justify-center items-center h-full {"grow" + (i+2)} scale-0 overflow-hidden transition-all
-                         text-md font-bold">
+            <div class="skill border-b-2 ml-4 w-full border-y-white/15 col-span-1 bg-blue-400/0 flex justify-center items-center h-full {"grow" + (i+2)} scale-0 overflow-hidden transition-all
+                         text-md">
                 {skill.title}
             </div>
         {/each}
@@ -58,11 +53,14 @@
 
 
 <style>
-    .a:hover .tex {
+    .skill {
+        font-weight: 500;
+    }
+    .group:hover .tex {
         opacity: 100%;
     }
 
-    .a:hover img {
+    .group:hover img {
         filter:blur(4px);
     }
     
